@@ -37,16 +37,25 @@ print ("HELLO WORLD !")
 # SalaireNet(Brut, coeff)
 # SalireParSeconde(Salaire horaire, Heure parjourouvr, Nbjoursouvréparan)
 #DEBUT
-def retournerXPlusY(x,y)
-   x+y
-def retournerXMoinsY(x,y)
-   x-y
-def retournerXFoisY(x,y)
-   x*y
-def retournerXDiviserY(x,y)
-   x/y
-def retournerXModuloY(x,y)
-   x%y
+def XPlusY(x,y)
+ return  x+y
+def XMoinsY(x,y)
+  return x-y
+def XFoisY(x,y)
+  return x*y
+def XDiviserY(x,y)
+#Si y= 0
+if (y == 0) :
+   # Afficher "impossible"
+   print("impossible car crée des trous noirs")
+   #retourner vide
+   return
+   #Sinon
+else :
+   #Retourner x divisé par y
+   return x/y
+def XModuloY(x,y)
+  return x%y
 def Snett(Brut, coeff)
  return Brut - Brut*coeff
 def salaireParSeconde(salaireHoraire, heureParJourOuvr, NbjoursOuvreParAn)
@@ -76,5 +85,29 @@ def calculBrutEnNet(salaireBrut, isPublic):
       salaireNet = widthdrawFees(salaireBrut, 23)
    #Retourner salaireNet
    return salaireNet
+
+def input():
+   
+#renvoie un caractere de type string au hasard
+
+#Exercice:
+   #Faire un mini jeu qui affiche un message lorsque input renvoie le bon caractere
+      #definir le caractere a trouver
+      def caractere = str(input("Définissé le caractere à trouver"))
+      #Compteur 
+      compteur = 0
+      #creer une boucle repeté tant que le caractere ne correspond pas
+      while input() != caractere:
+         #compteur
+         compteur = compteur + 1
+         #si le caractere correspond
+      else : 
+         print("ta gagné bg")
+         print(compteur)
+
+      
+      #Afficher "gagné"
+
+   #le caractere doit être parametrable
 
 #FIN
