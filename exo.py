@@ -87,7 +87,7 @@ def calculBrutEnNet(salaireBrut, isPublic):
    return salaireNet
 
 def input():
-   
+
 #renvoie un caractere de type string au hasard
 
 #Exercice:
@@ -97,15 +97,12 @@ def input():
       #Compteur 
       compteur = 0
       #creer une boucle repeté tant que le caractere ne correspond pas
-      while input() != caractere:
+      while input() != str(input("Définissé le caractere à trouver"))
          #compteur
          compteur = compteur + 1
          #si le caractere correspond
       else : 
-         print("ta gagné bg")
-         print(compteur)
-
-      
+         print("ta gagné bg"+ str(compteur) + "essaie")
       #Afficher "gagné"
 
    #le caractere doit être parametrable
