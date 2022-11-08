@@ -51,9 +51,30 @@ def Snett(Brut, coeff)
  return Brut - Brut*coeff
 def salaireParSeconde(salaireHoraire, heureParJourOuvr, NbjoursOuvreParAn)
 # calculer mon salaire annuel
-   Salaireannuel = salaireHoraire * NbjoursOuvreParAn * heureParJourOuvr
+   SalaireAnnuel = salaireHoraire * NbjoursOuvreParAn * heureParJourOuvr
    # calculer mon nombre de sencondes en année
-   secondeparan = 365*24*3600 
+   secondeAarAn = 365*24*3600 
    # je pose et je retourne la division
-   return Salaireannuel/secondeparan
+   return SalaireAnnuel/secondeParAn
+
+# Definir une fonction widthFees qui retire un pourcentage a un total en fonction d'un total a un pourcentage
+   def widthdrawFees(total, percent)
+   #Definir Fees en fonction d'un total et d'un pourcentage
+   fees = total * (percent/100)
+   #soustraire fees au total
+   result = 
+   #retourner ma valeur obtenue
+#def une fct qui retourne le salaire net en fct du salire brut (float) et du secteur d'activité (ispublic > booleen)
+def calculBrutEnNet(salaireBrut, isPublic):
+   #si je suis un travailleur du secteur publique
+   if isPublic:
+      #Alorsd je soustrais 15% de mon salire brut
+      salaireNet = widthdrawFees(salaireBrut, 15)
+   #Sinon : Je suis un travailleur du secteur privé
+   else:
+      #Alors je soustrais 23% de mon salaire brut
+      salaireNet = widthdrawFees(salaireBrut, 23)
+   #Retourner salaireNet
+   return salaireNet
+
 #FIN
