@@ -36,3 +36,21 @@ print ("HELLO WORLD !")
 # modulo(x, y)
 # SalaireNet(Brut, coeff)
 # SalireParSeconde(Salaire horaire, Heure parjourouvr, Nbjoursouvréparan)
+def retournerXPlusY(x,y)
+   x+y
+def retournerXMoinsY(x,y)
+   x-y
+def retournerXFoisY(x,y)
+   x*y
+def retournerXDiviserY(x,y)
+   x/y
+def retournerXModuloY(x,y)
+   x%y
+def retournerSalairebrutFoisCoefficient(Brut, coeff)
+Snett = Sbrut*coeff #environ 0.80
+def retournerSalaireparseconde(Salaire horaire, Heure parjourouvr, Nbjoursouvréparan)
+Salaireannuel = Salairehoraire * Nbheure * jour
+secondeparan = Salairehoraire*24*3600 
+SalireParSeconde = Salaireannuel/secondeparan
+   
+
