@@ -36,6 +36,7 @@ print ("HELLO WORLD !")
 # modulo(x, y)
 # SalaireNet(Brut, coeff)
 # SalireParSeconde(Salaire horaire, Heure parjourouvr, Nbjoursouvréparan)
+#DEBUT
 def retournerXPlusY(x,y)
    x+y
 def retournerXMoinsY(x,y)
@@ -46,11 +47,13 @@ def retournerXDiviserY(x,y)
    x/y
 def retournerXModuloY(x,y)
    x%y
-def retournerSalairebrutFoisCoefficient(Brut, coeff)
-Snett = Sbrut*coeff #environ 0.80
-def retournerSalaireparseconde(Salaire horaire, Heure parjourouvr, Nbjoursouvréparan)
-   Salaireannuel = Salairehoraire * Nbheure * jour
-   secondeparan = Salairehoraire*24*3600 
-   SalireParSeconde = Salaireannuel/secondeparan
-   
-
+def Snett(Brut, coeff)
+ return Brut - Brut*coeff
+def salaireParSeconde(salaireHoraire, heureParJourOuvr, NbjoursOuvreParAn)
+# calculer mon salaire annuel
+   Salaireannuel = salaireHoraire * NbjoursOuvreParAn * heureParJourOuvr
+   # calculer mon nombre de sencondes en année
+   secondeparan = 365*24*3600 
+   # je pose et je retourne la division
+   return Salaireannuel/secondeparan
+#FIN
